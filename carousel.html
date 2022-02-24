@@ -1,0 +1,33 @@
+<style>
+    .body{
+        margin: 0px;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer{
+        width: 200px;
+        height: 50px;
+        border: solid 2px black;
+        overflow: hidden;
+    }
+
+    .inner{
+        height: 80px;
+        background-color: rebeccapurple;
+        width: 150%;
+        transform: translateX( calc( -1 * ( 100% / 6) ) );
+    }
+</style>
+
+<div class="container">
+    <div class="outer">
+        <div class="inner"></div>
+
+    </div>
+</div>
