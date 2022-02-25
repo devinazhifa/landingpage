@@ -121,7 +121,12 @@
     font-size: 14px;
     font-weight: bold;
 }
+.list-testi .carousel-indicators{
+    margin-bottom: -30px;
+    gap: 30px;
+}
 .cta-banner{
+    margin-top: 70px;
     background: #0D28A6;
     border-radius: 13px;
     text-align: center;
@@ -337,6 +342,11 @@
     .list-testi .body h6{
         font-size: 14px;
         font-weight: bold;
+    }
+
+    .list-testi .carousel-indicators{
+        margin-bottom: -50px;
+        gap: 30px;
     }
 
     .cta-banner{
