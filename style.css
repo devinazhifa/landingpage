@@ -1,19 +1,18 @@
+.navbar{
+    background: #F1F3FF;
+}
 .hero {
     overflow: hidden;
     background-image: url(assets/bg.png);
     background-size: cover;
-    height: 460px;
-    margin-top: -60px;
-    justify-content: space-between;
-    align-items: center;
 }
 .hero .hero-image {
     width: 100%;
-    transform: translateX(22%);
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .hero .hero-title{
+    margin-top: 70px;
     font-weight: bold;
     font-size: 36px;
     line-height: 150%;
@@ -22,8 +21,6 @@
 .hero .hero-subtitle{
     font-size: 14px;
     line-height: 20px;
-    width: 468px;
-    height: 60px;
 }
 
 .our-services .img-fluid{
@@ -112,7 +109,7 @@
 }
 
 .list-testi .img-area{
-    margin-left: 180px;
+    margin-left: 100px;
 }
 
 .list-testi .body{
@@ -165,7 +162,7 @@
 }
 
 .faq .dropdown{
-    width: 550px;
+    width: 290px;
 }
 
 .faq .dropdown-faq{
@@ -196,13 +193,9 @@
     }
 
     .hero {
-        overflow: hidden;
         background-image: url(assets/bg.png);
         background-size: cover;
         height: 460px;
-        margin-top: -60px;
-        justify-content: space-between;
-        align-items: center;
     }
     .hero .hero-image {
         width: 100%;
@@ -211,6 +204,7 @@
     }
 
     .hero .hero-title{
+        margin-top: 0px;
         font-weight: bold;
         font-size: 36px;
         line-height: 150%;
@@ -222,8 +216,7 @@
         width: 468px;
         height: 60px;
     }
-    
-    
+
     .our-services .img-fluid{
         margin-top: 100px;
     }
@@ -232,6 +225,7 @@
         font-weight: bold;
         font-size: 24px;
     }
+
     .our-services .col-lg-6 p{
         font-size: 14px;
     }
@@ -265,7 +259,6 @@
     .why-us-list{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        
     }
 
     .list-item{
