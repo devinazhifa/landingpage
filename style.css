@@ -1,3 +1,6 @@
+*{
+    font-family: Helvetica;
+}
 .navbar{
     background: #F1F3FF;
 }
@@ -84,7 +87,7 @@
     overflow: hidden;
 }
 
-.testimonial .col h5{
+.testimonial .h5{
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
@@ -97,36 +100,23 @@
     margin-bottom: 50px;
 }
 
-.list-testi .single-box{
-    background: #F1F3FF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    width: 700px;
-    padding: 20px;
-    height: 270px;
+.list-testi {
+    margin: 50px;
+}
+
+.list-testi .single-box {
     width: 100%;
-    margin-bottom: 15px;
-}
-
-.list-testi .img-area{
-    margin-left: 100px;
-}
-
-.list-testi .body{
-    font-size: 14px;
+    height: 300px;
+    display: block;
     text-align: center;
+    padding:  40px;
+    background: #F1F3FF;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
-.list-testi .body h6{
-    font-size: 14px;
-    font-weight: bold;
-}
-.list-testi .carousel-indicators{
-    margin-bottom: -30px;
-    gap: 30px;
-}
 .cta-banner{
-    margin-top: 70px;
     background: #0D28A6;
     border-radius: 13px;
     text-align: center;
@@ -154,6 +144,7 @@
 .faq{
     margin-top: 50px;
 }
+
 .faq h4{
     font-weight: bold;
     font-size: 24px;
@@ -166,23 +157,40 @@
     line-height: 20px;
 }
 
-.faq .dropdown{
-    width: 290px;
+.card{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    margin: 10px;
+}
+.card .select {
+    color: black;
+    font-size: 16px;
 }
 
-.faq .dropdown-faq{
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #FFFFFF;
-    border: 1px solid #D4D4D4;
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-bottom: 15px;
+.card .fa-solid {
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    color: black;
 }
+
+.footer{
+    margin: 100px 0px 50px;
+    font-size: 14px;
+}
+
+.footer .nav-footer{
+    list-style-type: none;
+}
+
+.footer .link-footer {
+    color: black;
+    text-decoration: none;
+    line-height: 20px;
+}
+
 
 /* DESKTOP VERSION */
 @media screen and (min-width: 992px) { 
@@ -195,6 +203,9 @@
     }
     .nav-link{
         margin-right: 20px;
+    }
+    .navbar{
+        background: #F1F3FF;
     }
 
     .hero {
@@ -261,11 +272,6 @@
         margin-top: 100px;
     }
 
-    .why-us-list{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
     .list-item{
         background-color: white;
         padding: 15px;
@@ -318,65 +324,50 @@
         line-height: 20px;
         margin-bottom: 50px;
     }
-
-    .list-testi .single-box{
-        background: #F1F3FF;
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
-        width: 700px;
-        padding: 20px;
-        height: 270px;
+    
+    .list-testi {
+        margin: 50px;
+    }
+    
+    .list-testi .single-box {
         width: 100%;
-        transform: translateX(-50%);
-    }
-
-    .list-testi .img-area{
-        margin-left: 150px;
-    }
-
-    .list-testi .body{
-        font-size: 14px;
+        height: 300px;
+        display: block;
         text-align: center;
-    }
-
-    .list-testi .body h6{
+        padding:  30px;
+        background: #F1F3FF;
+        border-radius: 8px;
         font-size: 14px;
-        font-weight: bold;
     }
-
-    .list-testi .carousel-indicators{
-        margin-bottom: -50px;
-        gap: 30px;
-    }
-
+    
     .cta-banner{
+        margin-top: 70px;
         background: #0D28A6;
         border-radius: 13px;
-        margin-top: 100px;
         text-align: center;
         padding: 30px;
     }
-
+    
     .cta-banner h2{
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
         line-height: 150%;
         color: white;
     }
-
+    
     .cta-banner p{
+        text-align: center;
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
         color: white;
     }
-
+    
     .cta-banner .btn-success{
         margin-top: 32px;
     }
-
     .faq{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .faq h4{
@@ -384,32 +375,44 @@
         font-size: 24px;
         line-height: 36px;
     }
-
+    
     .faq p{
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
     }
 
-    .faq .dropdown{
-        width: 550px;
+    .card{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: black;
+        margin: 10px;
+    }
+    .card .select {
+        color: black;
+        font-size: 16px;
     }
     
-    .faq .dropdown-faq{
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        background: #FFFFFF;
-        border: 1px solid #D4D4D4;
-        box-sizing: border-box;
-        border-radius: 4px;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        margin-bottom: 15px;
+    .card .fa-solid {
+        position: absolute;
+        right: 30px;
+        top: 18px;
+        color: black;
+    }
+    .footer{
+        margin: 100px 0px 50px;
         font-size: 14px;
+    }
+    
+    .footer .nav-footer{
+        list-style-type: none;
+    }
+    
+    .footer .link-footer {
+        color: black;
+        text-decoration: none;
         line-height: 20px;
     }
 
 }
-
